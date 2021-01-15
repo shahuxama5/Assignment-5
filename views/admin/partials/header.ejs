@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        LMS
+    </title>
+    <link rel="icon" href="public/favicon.png" type="image/png" sizes="16x16">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <%- include("inc/styles") %>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <%- include("inc/top-nav") %>
+            <%- include("inc/sidebar") %>
+
+
+
+
+                <!-- Content Wrapper. Contains page content -->
+
+                <div class="content-wrapper">
+
+                    <% if(messages.success){ %>
+                        <div class="alert alert-success">
+                            <%=messages.success %>
+                        </div>
+                        <%}%>
+
+                            <% if(messages.error){ %>
+                                <div class="alert alert-danger">
+                                    <%=messages.error %>
+                                </div>
+                                <%}%>
